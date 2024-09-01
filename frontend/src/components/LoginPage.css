@@ -1,0 +1,92 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
+}
+
+.login-form,
+.registration-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form header,
+.registration-form header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1877f2;
+}
+
+.login-form form,
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form input,
+.registration-form input {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.login-form input[type="button"],
+.registration-form input[type="button"] {
+  background-color: #1877f2;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form input[type="button"]:hover,
+.registration-form input[type="button"]:hover {
+  background-color: #166fe5;
+}
+
+.login-form a {
+  text-align: right;
+  color: #1877f2;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.signup label {
+  color: #1877f2;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .login-form {
+  display: none;
+}
+
+#check:checked ~ .registration-form {
+  display: block;
+}
+
+.registration-form {
+  display: none;
+}
